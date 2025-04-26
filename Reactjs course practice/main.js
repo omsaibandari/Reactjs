@@ -30,7 +30,35 @@
 // console.log(product);
 
 //getting the list of products from the external links
-
 // list-of-products
 
+let fetchgetElement = document.querySelector(".list-of-products");
+
+function renderProducts(getProduct){
+    fetchgetElement.innerHTML = getProduct.map((singleProduct,index) => {
+        return `<p>${singleProduct.title}</p>`
+    }).join(' ');
+}
+
+async function fetchProductListfn() {
+    try {
+
+        const apiResponse= await fetch("https://dummyjson.com/products", {
+            method:'GET'
+        });
+        
+        const result = await apiResponse.json();
+
+        console.log(result);
+
+        if(result?.products?.length > 0) renderProducts(result?.products)
+        
+
+    } catch (e) {
+        console.log(e);
+        
+    }
+}
+
+fetchProductListfn()
 
