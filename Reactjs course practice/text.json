@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "title": "omsai"
+        },
+        {
+            "id": 1,
+            "title": "Varma"
+        },
+        {
+            "id": 2,
+            "title": "Rohit"
+        },
+        {
+            "id": 3,
+            "title": "Srujan"
+        },
+        {
+            "id": 4,
+            "title": "Madhukar"
+        },
+        {
+            "id": 5,
+            "title": "Mohan"
+        },
+        {
+            "id": 6,
+            "title": "Navya"
+        }
+    ]
+}
